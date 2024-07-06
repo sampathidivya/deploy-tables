@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td {
+        border: 2px solid greenyellow;
+
+        border-collapse: collapse;
+        box-shadow: 5px 5px 5px greenyellow;
+      }
+      h2 {
+        text-shadow: 2px 2px 2px red;
+        border: 2px solid;
+      }
+      .t1 {
+        height: 40vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .t2 {
+        height: 50vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      .t3 {
+        height: 60vh;
+        width: 50vw;
+        position: relative;
+        left: 100px;
+        top: 100px;
+      }
+      @media screen and (max-width: 425px) {
+        .t2,
+        .t3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 426px) and (max-width: 760px) {
+        .t1,
+        .t3 {
+          display: none;
+        }
+      }
+      @media screen and (min-width: 761px) {
+        .t1,
+        .t2 {
+          display: none;
+        }
+      }
+      .cc{
+        background-image: linear-gradient(to left,pink,blue,greenyellow);
+      }
+     
+    </style>
+  </head>
+  <body>
+
+
+    <table class="t1">
+      <caption>
+        <h2>TABLE-1</h2>
+      </caption>
+      <tr>
+        <td class="cc"></td>
+        <td style="background-color: white;"></td>
+      </tr>
+      <tr>
+        <td style="background-color: green"></td>
+        <td style="background-color: red"></td>
+      </tr>
+    </table>
+
+
+    <table class="t2">
+      <caption>
+        <h2>TABLE-2</h2>
+      </caption>
+      <tr>
+        <td style="background-color: blueviolet"></td>
+        <td style="background-color: goldenrod"></td>
+        <td style="background-color: greenyellow"></td>
+      </tr>
+      <tr>
+        <td style="background-color: brown"></td>
+        <td style="background-color: yellowgreen"></td>
+        <td style="background-color: palevioletred"></td>
+      </tr>
+      <tr>
+        <td style="background-color: aquamarine"></td>
+        <td style="background-color: bisque"></td>
+        <td style="background-color: grey"></td>
+      </tr>
+    </table>
+
+
+    <table class="t3">
+      <caption>
+        <h2>TABLE-3</h2>
+      </caption>
+      <tr>
+        <td style="background-color: pink"></td>
+        <td style="background-color: purple"></td>
+        <td style="background-color: grey"></td>
+        <td style="background-color: mediumturquoise"></td>
+      </tr>
+      <tr>
+        <td style="background-color: darkgoldenrod"></td>
+        <td style="background-color: blueviolet"></td>
+        <td style="background-color: green"></td>
+        <td style="background-color: yellow"></td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(184, 11, 11)"></td>
+        <td style="background-color: rgb(13, 244, 75)"></td>
+        <td style="background-color: rgb(238, 12, 129)"></td>
+        <td style="background-color: rgb(245, 67, 8)"></td>
+      </tr>
+      <tr>
+        <td style="background-color: rgb(184, 11, 80)"></td>
+        <td style="background-color: rgb(117, 20, 221)"></td>
+        <td style="background-color: rgb(241, 76, 16)"></td>
+        <td style="background-color: rgb(107, 84, 76)"></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
